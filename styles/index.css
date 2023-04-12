@@ -1,41 +1,114 @@
 .header{
-    display: flex;
-    align-items: center;
-    margin-left: 150px;
-}
-.icons-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1200px;
-    margin-left: 110px;
-    margin-right: 200px;
-}
-.rainydays-logo{
     height: 80px;
+    display: flex;
+
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(211, 208, 208);
+}
+.left-header{
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    column-gap: 70px;
+
+}
+.right-header{
+    display: flex;
+    align-items: center;
+    margin-right: 300px;
+    column-gap: 70px;
 }
 .hamburger-icon{
-    height: 40px;
+    height: 30px;
+}
+.rainydays-logo{
+    height: 70px;
 }
 .account-icon{
-    height: 40px;
-}
-.shopping-cart{
-    height: 40px;
-}
-.header-p{
-    font-weight: 600;
-    font-size: 25px;
-}
-.search-bar-div{
-    display: flex;
-    align-items: center;
+    height: 30px;
+    margin-top: 5px;
 }
 .search-icon{
-    margin-top: 20px;
+    height: 30px;
+}
+.shopping-cart-icon{
     height: 40px;
 }
+.facebook-icon{
+    height: 40px;
+}
+.twitter-icon{
+    height: 40px;
+}
+.instagram-icon{
+    height: 40px;
+}
+.home-box{
+    display: flex;
+    justify-content: center;
 
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.home-image{
+    width: 2000px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 25%;
+    background-position: top;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.home-button-div{
+    display: inline-block;
+    position: absolute;
+    margin-top: 50px;
+}
+.home-button{
+    border: none;
 
+    color: rgb(0, 0, 0);
+    background-color: rgb(168, 165, 165);
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    background-color: rgb(211, 208, 208);
+    color: black;
+    height: 80px;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+.left-footer{
+    margin-left: 20px;
+    display: flex;
+    justify-content: right;
+}
+.right-footer{
+    margin-top: 15px;
+    margin-right: 20px;
+    display: flex;
+    column-gap: 20px;
+}
 
 
