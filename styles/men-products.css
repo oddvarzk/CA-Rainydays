@@ -1,37 +1,16 @@
-.jacket-preview{
-    display: inline-block;
-    width: 200px;
-    margin-top: 40px;
+.mensection-image{
+    height: 250px;
+    width: 80%;
+    object-fit: cover;
+    object-position: middle;
 }
-.jacket-row{
-    width: 200px;
-}
-.jacket-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 120px;
-    row-gap: 20px;
-
+.mensection-box{
     display: flex;
     justify-content: center;
 }
-.jacket-info-grid{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-}
-.jacket-picture{
-    height: 200px;
-}
-.jacket-name{
-    margin-left: 26px;
-    margin-top: 0;
-    font-weight: 600;
-}
-.price{
-    margin-left: 26px;
-    font-weight: 600;
-    margin-left: 58px;
-}
-.buy-now-button{
-    margin-left: 50px;
+.mensection-text-box{
+    margin-top: 70px;
+    position: absolute;
+    left: 15%;
+
 }

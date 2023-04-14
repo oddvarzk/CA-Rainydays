@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.header-area{
+    background-color: rgb(211, 208, 208);
+    color: white;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 100px;
+}
+.hamburger-icon{
+    height: 30px;
+}
+.rainydays-logo{
+    height: 70px;
+    margin-left: 70px;
+}
+.account-icon{
+    height: 28px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.search-icon{
+    height: 30px;
+}
+.shoppingcart-icon{
+    height: 40px;
+}
+.footer{
+    margin-top: 40px;
+    background-color: rgb(211, 208, 208);
+    height: 90px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-footer{
+    display: flex;
+    margin-left: 100px;
+    height: 90px;
+}
+.right-footer{
+    display: flex;
+    margin-right: 100px;
+}
+.payment-icons{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+.click-text-footer{
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+    font-weight: 600;
+}
+.text-left-footer{
+    margin-top: 10px;
+    margin-bottom: 0;
+    min-width: 350px;
+}
+.visa-icon{
+    height: 60px;
+    margin-right: 10px;
+}
+.mastercard-icon{
+    height: 38px;
+    margin-right: 10px;
+}
+.klarna-icon{
+    height: 40px;
+}
+.instagram-icon{
+    height: 40px;
+    cursor: pointer;
+}
+.facebook-icon{
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.twitter-icon{
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
