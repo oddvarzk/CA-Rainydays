@@ -1,0 +1,13 @@
+.form-container{
+    display: block;
+}
+.message-box{
+    height: 70px;
+    width: 15%;
+}
+.message-box::placeholder{
+    text-align: top;
+}
+div{
+    margin-bottom: 10px;
+}
