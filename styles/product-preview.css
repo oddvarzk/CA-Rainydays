@@ -58,7 +58,7 @@ p{
 }
 .buy-now-button:hover{
     color: white;
-    background-color: rgb(13, 146, 13);
+    background-color: rgb(0, 0, 0);
     border: none;
 }
 
