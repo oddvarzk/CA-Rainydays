@@ -1,0 +1,22 @@
+.women-jacket{
+    height: 150px;
+}
+.purchase-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,200px));
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(106, 149, 163);
+}
+section{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns: 20px 400px;
+}
+.checkbox1:checked{
+    background-color: black;
+}

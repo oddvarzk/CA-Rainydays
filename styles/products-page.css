@@ -32,7 +32,7 @@
 .jacket-box{
     text-align: center;
 
-    height: 350px;
+    min-height: 350px;
     border-radius: 1px;
     border-style: solid;
     border-color: lightgrey;

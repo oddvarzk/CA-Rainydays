@@ -87,6 +87,9 @@
     display: flex;
     justify-content: center;
 }
+.see-more-style{
+    color: rgb(114, 133, 62);
+}
 .onsale-box-image{
     margin-top: 30px;
 }
