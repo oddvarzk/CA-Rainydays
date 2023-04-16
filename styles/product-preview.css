@@ -10,13 +10,19 @@
     height: 300px;
 }
 .jacket-image{
-    height: 300px;
+    width: 200px;
+    object-fit: contain;
 }
 .jacket-info{
-    display: inline-block;
+    display: block;
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+    max-width: 40%;
+    min-width: 100px;
+}
+.jacket-image-box{
+    display: flex;
 }
 .jacket-title{
     font-weight: 600;
