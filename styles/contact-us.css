@@ -8,6 +8,7 @@
 .message-box::placeholder{
     text-align: top;
 }
-div{
-    margin-bottom: 10px;
+.footer{
+    position: absolute;
+    bottom: 0;
 }

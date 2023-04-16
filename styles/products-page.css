@@ -32,6 +32,7 @@
 .jacket-box{
     text-align: center;
 
+    height: 350px;
     border-radius: 1px;
     border-style: solid;
     border-color: lightgrey;
@@ -42,6 +43,8 @@
 .jacket-info{
     display: inline-block;
     text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .jacket-title{
     font-weight: 600;

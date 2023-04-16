@@ -63,10 +63,8 @@ a{
 }
 .left-footer{
     display: flex;
-    flex-shrink: 0;
     margin-left: 15%;
     height: 90px;
-    flex-basis: 0;
     column-gap: 20px;
 }
 .right-footer{
@@ -83,9 +81,6 @@ a{
     margin-top: 10px;
     margin-bottom: 0;
     font-weight: 600;
-}
-.text-left-footer{
-    margin-bottom: 0;
 }
 .visa-icon{
     height: 60px;

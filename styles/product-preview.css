@@ -1,0 +1,57 @@
+.h1-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.jacket-box{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.jacket-image{
+    height: 300px;
+}
+.jacket-info{
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.jacket-title{
+    font-weight: 600;
+    font-size: 18px;
+}
+.jacket-description{
+    width: 70%;
+    min-width: 50%;
+}
+.buy-now-button{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    
+    cursor: pointer;
+}
+.buy-now-button:hover{
+    color: white;
+    background-color: rgb(13, 146, 13);
+    border: none;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+.p1{
+    font-weight: 700;
+}
