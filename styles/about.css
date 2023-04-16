@@ -10,7 +10,6 @@
 .about-image{
     display: flex;
     width: 50%;
-    height: 300px;
     
     object-fit: contain;
     object-position: 50% 30%;
