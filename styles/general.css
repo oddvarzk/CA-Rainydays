@@ -36,7 +36,7 @@ a{
 }
 .rainydays-logo{
     height: 70px;
-    margin-left: 50%;
+    margin-left: 10%;
 }
 .account-icon{
     height: 28px;
@@ -59,18 +59,11 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 .left-footer{
     display: flex;
-    margin-left: 15%;
+    margin-left: 10%;
     height: 90px;
-    column-gap: 20px;
-}
-.right-footer{
-    display: flex;
-    flex-shrink: 0;
-    margin-right: 15%;
 }
 .payment-icons{
     margin-left: 5%;
@@ -100,11 +93,6 @@ a{
     margin-left: 5%;
 }
 .facebook-icon{
-    height: 40px;
-    margin-left: 10%;
-    cursor: pointer;
-}
-.twitter-icon{
     height: 40px;
     margin-left: 10%;
     cursor: pointer;
