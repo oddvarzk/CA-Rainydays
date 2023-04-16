@@ -4,10 +4,6 @@
 .purchase-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,200px));
-
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(106, 149, 163);
 }
 section{
     margin-left: 10%;
@@ -19,4 +15,13 @@ section{
 }
 .checkbox1:checked{
     background-color: black;
+}
+.text-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.CVV-Exp-container{
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 10px;
 }
