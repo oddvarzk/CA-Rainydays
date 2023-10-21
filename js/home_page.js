@@ -11,7 +11,7 @@ async function callApi(){
 
         for(let i = 0; i < results.length; i++){
             if (i < 6){
-            textContainer.innerHTML += `<a href="product-preview.html">
+            textContainer.innerHTML += `<a href="product-preview.html?id=${results[i].id}">
                                             <div class=jacket-box>                              
                                                 <div class="jacket-image-box">
                                                     <img alt="${results[i].title}" class="jacket-image" src="${results[i].image}">
@@ -25,7 +25,7 @@ async function callApi(){
                                         </a>`
         }
         if (results[i].discountedPrice !== results[i].price){
-            discountContainer.innerHTML += `<a href="product-preview.html">
+            discountContainer.innerHTML += `<a href="product-preview.html?id=${results[i].id}">
                                                 <div class=jacket-box>                              
                                                     <div class="jacket-image-box">
                                                         <img alt="${results[i].title}" class="jacket-image" src="${results[i].image}">

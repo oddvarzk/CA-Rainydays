@@ -8,7 +8,7 @@ async function callApi(){
         const results = await response.json();
 
         for(let i = 0; i < results.length; i++){
-            textContainer.innerHTML += `<a href="product-preview.html">
+            textContainer.innerHTML += `<a href="product-preview.html?id=${results[i].id}">
                                             <div class=jacket-box>
                                             
                                                 <div class="jacket-image-box">

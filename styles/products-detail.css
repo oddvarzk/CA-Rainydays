@@ -17,7 +17,7 @@ section{
     background-color: black;
 }
 .text-grid{
-    display: flex;
+    display: inline-block;
     max-width: fit-content;
     flex-wrap: wrap;
 }

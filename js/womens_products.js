@@ -9,7 +9,7 @@ async function callApi(){
 
         for(let i = 0; i < results.length; i++){
             if (results[i].gender === "Female"){
-            textContainer.innerHTML += `<a href="product-preview.html">
+            textContainer.innerHTML += `<a href="product-preview.html?id=${results[i].id}">
                                             <div class=jacket-box>                              
                                                 <div class="jacket-image-box">
                                                     <img alt="${results[i].title}" class="jacket-image" src="${results[i].image}">
