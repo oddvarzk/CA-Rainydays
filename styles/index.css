@@ -1,5 +1,5 @@
 .first-image{
-    height: 300px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
 }
@@ -35,11 +35,11 @@
 }
 .div-buttons{
     position: absolute;
-    margin-bottom: 70px;
+    margin-bottom: 200px;
 }
 .text-above-buttons{
     position: absolute;
-    margin-bottom: 170px;
+    margin-bottom: 300px;
 }
 
 .rainydays-front-page-text{

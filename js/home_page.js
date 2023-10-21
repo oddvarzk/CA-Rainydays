@@ -19,24 +19,24 @@ async function callApi(){
                                                 <div class="jacket-info">
                                                     <p class="jacketText">${results[i].title}</p>
                                                     <p class="jacket-description">${results[i].description}</p>
-                                                    <p class="jacket-price">${results[i].price}</p>
+                                                    <p class="jacket-price">${results[i].price} $</p>
                                                 </div>
                                             </div>
                                         </a>`
         }
         if (results[i].discountedPrice !== results[i].price){
             discountContainer.innerHTML += `<a href="product-preview.html">
-                                            <div class=jacket-box>                              
-                                                <div class="jacket-image-box">
-                                                    <img alt="${results[i].title}" class="jacket-image" src="${results[i].image}">
+                                                <div class=jacket-box>                              
+                                                    <div class="jacket-image-box">
+                                                        <img alt="${results[i].title}" class="jacket-image" src="${results[i].image}">
+                                                    </div>
+                                                    <div class="jacket-info">
+                                                        <p class="jacketText">${results[i].title}</p>
+                                                        <p class="jacket-description">${results[i].description}</p>
+                                                        <p class="jacket-price">${results[i].discountedPrice} $</p>
+                                                    </div>
                                                 </div>
-                                                <div class="jacket-info">
-                                                    <p class="jacketText">${results[i].title}</p>
-                                                    <p class="jacket-description">${results[i].description}</p>
-                                                    <p class="jacket-price">${results[i].discountedPrice}</p>
-                                                </div>
-                                            </div>
-                                        </a>`
+                                            </a>`
         }
     }
     } catch (error) {
