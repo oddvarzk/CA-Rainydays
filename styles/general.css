@@ -34,13 +34,14 @@ a{
 }
 .hamburger-icon{
     height: 30px;
+    margin-left: 30px;
 }
 .rainydays-logo{
     height: 70px;
     margin-left: 50px;
 }
 .account-icon{
-    height: 28px;
+    height: 25px;
     margin-left: 50%;
     margin-right: 20px;
 }

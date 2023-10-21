@@ -23,8 +23,8 @@ function createHtml(result) {
                                 </div>
                                 <div class="purchase-info">
                                     <p>Item : ${result.title}</p>
-                                    <p>Price : ${result.price} $</p>
+                                    <p>Price : ${result.title} $</p>
                                     <p>Size : M</p>
-                                    <p>Quantity : 1</p>
+                                    <p>Quantity : </p>
                                 </div>`;
 }
