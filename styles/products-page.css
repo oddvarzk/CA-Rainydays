@@ -21,10 +21,9 @@
 .jacket-box-grid{
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 20px;
 
     display: grid;
-    column-gap: 20px;
+    column-gap: 4%;
     row-gap: 20px;
     grid-template-columns: repeat(auto-fit,minmax(200px,300px));
     justify-content: center;
@@ -32,7 +31,7 @@
 .jacket-box{
     text-align: center;
 
-    min-height: 350px;
+    height: 350px;
     border-radius: 1px;
     border-style: solid;
     border-color: lightgrey;
@@ -41,8 +40,6 @@
     height: 200px;
 }
 .jacket-info{
-    display: inline-block;
-    text-align: left;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -51,5 +48,6 @@
     font-size: 18px;
 }
 .jacket-description{
-    max-width: 300px;
+    max-width: fit-content;
+    font-size: 13px;
 }

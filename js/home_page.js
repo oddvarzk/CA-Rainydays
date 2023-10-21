@@ -43,5 +43,4 @@ async function callApi(){
         textContainer.innerHTML = message("error", error);
     }
 }
-
 callApi();
