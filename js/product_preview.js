@@ -1,24 +1,25 @@
-const productContainer = document.querySelector(".jacket-box");
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
-const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
+document.addEventListener('DOMContentLoaded', function () {
+    const productContainer = document.querySelector(".jacket-box");
+    const queryString = document.location.search;
+    const params = new URLSearchParams(queryString);
+    const id = params.get("id");
+    const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
 
-async function callApi() {
-    try {
-        const response = await fetch(url);
-        const result = await response.json();
+    async function callApi() {
+        try {
+            const response = await fetch(url);
+            const result = await response.json();
 
-        createHtml(result);
+            createHtml(result);
 
-    } catch (error) {
-        productContainer.innerHTML = message("error", error);
+        } catch (error) {
+            productContainer.innerHTML = message("error", error);
+        }
     }
-}
-callApi();
+    callApi();
 
-function createHtml(result) {
-    productContainer.innerHTML = `<div class="jacket-image-box">
+    function createHtml(result) {
+        productContainer.innerHTML = `<div class="jacket-image-box">
                                     <img alt="${result.title}" class="jacket-image" src="${result.image}">
                                 </div>
                                 <div class="jacket-info">
@@ -27,6 +28,7 @@ function createHtml(result) {
                                     <p><span class="p1">Price : </span>${result.price} $</p>
                                     <p><span class="p1">Color : </span>${result.baseColor}</p>
                                     <p><span class="p1">Size : </span>${result.sizes}</p>
-                                    <a href="products-detail.html"><button class="buy-now-button">Go to checkout</button></a>
+                                    <a href="products-detail.html?id=${result.id}"><button class="buy-now-button">Go to checkout</button></a>
                                 </div>`;
-}
+    }
+});

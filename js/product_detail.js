@@ -1,30 +1,33 @@
-const productContainer = document.querySelector(".purchase-container");
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
-const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
+document.addEventListener('DOMContentLoaded', function () {
+    const productContainer = document.querySelector(".purchase-container");
+    const queryString = document.location.search;
+    const params = new URLSearchParams(queryString);
+    const id = params.get("id");
 
-async function callApi() {
-    try {
-        const response = await fetch(url);
-        const result = await response.json(); // Assuming the API returns a single item
+    const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
 
-        createHtml(result);
+    async function callApi() {
+        try {
+            const response = await fetch(url);
+            const result = await response.json();
 
-    } catch (error) {
-        productContainer.innerHTML = message("error", error);
+            createHtml(result);
+
+        } catch (error) {
+            productContainer.innerHTML = "Error: " + error;
+        }
     }
-}
-callApi();
+    callApi();
 
-function createHtml(result) {
-    productContainer.innerHTML =`<div class="women-product-box">
-                                    <img alt="${result.title}" class="jacket-image" src="${result.image}">
-                                </div>
-                                <div class="purchase-info">
-                                    <p>Item : ${result.title}</p>
-                                    <p>Price : ${result.title} $</p>
-                                    <p>Size : M</p>
-                                    <p>Quantity : </p>
-                                </div>`;
-}
+    function createHtml(result) {
+        productContainer.innerHTML = `<div class="women-product-box">
+                                        <img alt="${result.title}" class="jacket-image" src="${result.image}">
+                                    </div>
+                                    <div class="purchase-info">
+                                        <p><span>Item</span> : ${result.title}</p>
+                                        <p><span>Price</span> : ${result.price} $</p>
+                                        <p><span>Size</span> : M </p>
+                                        <p><span>Quantity</span> : 1 </p>
+                                    </div>`;
+    }
+});

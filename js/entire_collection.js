@@ -1,16 +1,16 @@
-const textContainer = document.querySelector(".jacket-box-grid");
+document.addEventListener('DOMContentLoaded', function () {
+    const textContainer = document.querySelector(".jacket-box-grid");
 
-const url = "https://api.noroff.dev/api/v1/rainy-days";
+    const url = "https://api.noroff.dev/api/v1/rainy-days";
 
-async function callApi(){
-    try {
-        const response = await fetch (url);
-        const results = await response.json();
+    async function callApi() {
+        try {
+            const response = await fetch(url);
+            const results = await response.json();
 
-        for(let i = 0; i < results.length; i++){
-            textContainer.innerHTML += `<a href="product-preview.html?id=${results[i].id}">
-                                            <div class=jacket-box>
-                                            
+            for (let i = 0; i < results.length; i++) {
+                textContainer.innerHTML += `<a href="product-preview.html?id=${results[i].id}">
+                                            <div class=jacket-box>                              
                                                 <div class="jacket-image-box">
                                                     <img alt="${results[i].title}" class="jacket-image" src="${results[i].image}">
                                                 </div>
@@ -20,10 +20,11 @@ async function callApi(){
                                                     <p class="jacket-price">${results[i].price}</p>
                                                 </div>
                                             </div>
-                                        </a>`
+                                        </a>`;
+            }
+        } catch (error) {
+            textContainer.innerHTML = message("error", error);
         }
-    } catch (error) {
-        textContainer.innerHTML = message("error", error);
     }
-}
-callApi();
+    callApi();
+});
