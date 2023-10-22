@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                         <img alt="${result.title}" class="jacket-image" src="${result.image}">
                                     </div>
                                     <div class="purchase-info">
-                                        <p><span>Item</span> : ${result.title}</p>
+                                        <p><span>Item : ${result.title}</p>
                                         <p><span>Price</span> : ${result.price} $</p>
                                         <p><span>Size</span> : M </p>
                                         <p><span>Quantity</span> : 1 </p>
